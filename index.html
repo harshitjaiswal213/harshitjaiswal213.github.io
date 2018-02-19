@@ -1,164 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Material Design Bootstrap</title>
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="css/mdb.min.css" rel="stylesheet">
-    <!-- Your custom styles (optional) -->
-    <link href="css/style.css" rel="stylesheet">
+	<title>form</title>
+	<style>
+		form {
+			margin : 0 auto;
+			width : 400px;
+			padding: 1em;
+			border: 1px solid black;
+		}
+
+
+		form div + div {
+			margin-top: 1em;
+		}
+
+
+		label {
+			display: inline-block;
+			text-align: right;
+			width : 90px;
+
+		}
+
+
+
+		input , textarea {
+			font : 1em san-serif;
+
+			width: 300px;
+			box-sizing: border-box;
+
+			border: 1px solid black;
+		}
+
+
+		textarea {
+			vertical-align: top;
+			height: 5em;
+			resize: none;
+		}
+
+
+		button {
+			margin-left: 11em;
+		}
+
+
+	</style>
 </head>
-
 <body>
-
-    <!--MAIN PAGE-->
-<!--Navbar-->
-<nav class="navbar navbar-expand-lg navbar-dark indigo">
-
-        <!-- Navbar brand -->
-        <a class="navbar-brand" href="#">Harshit Jaiswal</a>
-    
-        <!-- Collapse button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-    
-        <!-- Collapsible content -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    
-            <!-- Links -->
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Porfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contacts</a>
-                </li>
-            </ul>
-    </nav>
-    <!--/.Navbar-->
-    <!--<br>SCROLL<br>SCROLL<br>SCROLL<br>SCROLL<br>SCROLL<br>SCROLL<br>SCROLL<br>SCROLL<br>SCROLL<br>SCROLL<br>SCROLL<br>SCROLL<br>SCROLL<br>SCROLL<br>SCROLL<br>SCROLL<br>SCROLL
-    <br>SCROLL<br>SCROLL<br>SCROLL<br>SCROLL<br>SCROLL<br>SCROLL<br>SCROLL<br>SCROLL<br>SCROLL<br>SCROLL<br>SCROLL
-    <br>SCROLL<br>SCROLL<br>SCROLL<br>SCROLL<br>SCROLL<br>SCROLL<br>SCROLL<br>SCROLL<br>SCROLL<br>SCROLL
-    -->
-    <main class="mt-5 mb-4">
+	<form action="https://formspree.io/harshitjaiswal1809@gmail.com" method="POST">
+		<div>
+			<label>Name : </label>
+			<input type="text" placeholder="Enter Your Name " required minlength="3" maxlength="20">
+		</div>
+		
+        <div>
+            <label>Age : </label>
+            <input type="number" step="1" min="12" max="50" pattern="\d+" >
+        </div>
         
-        <div class="container">
-            <!--grid system!-->
-            <div class="row">   
-                        <div class="col-md-7">
-                            <div class="view overlay hm-white-light z-depth-1-half m-3">
-                                <img src="harshit.jpg" class="img-fluid" alt="Harshit Jaiswal">
-                                <div class="mask"></div>
-                            </div>
-                        </div>
-            
-                        <div class="col-md-5 my-3" style="border-right: 2px solid black;">
-            
-                        <h2>Ricky Ponting.</h2>
-                        <br>
-                        <p>I am ddnkfjv klv fvfldk;d d;vl ;  jfnvjkvvn vfvnfdk</p>
-                        
-                        </div>
-                </div>
-        </div>
-    </main>    
+        
+		<div>
+			<label>E-Mail :</label>
+			<input type="email" placeholder="Enter Your E-Mail" required multiple>
+		</div>
 
+		<div>
+			<label>Message : </label>
+			<textarea placeholder="Message Here!!" required></textarea>
+		</div>
 
-    <!--FOOTER -->
-    <!--Footer-->
-<footer class="page-footer blue center-on-small-only">
+		<div>
+			<button>Send Your Message.</button>
+		</div>
 
-        <!--Footer Links-->
-        <div class="container-fluid">
-            <div class="row">
-    
-                <!--First column-->
-                <div class="col-md-6">
-                    <h5 class="title">Footer Content</h5>
-                    <p>Here you can use rows and columns here to organize your footer content.</p>
-                </div>
-                <!--/.First column-->
-    
-                <!--Second column-->
-                <div class="col-md-6">
-                    <h5 class="title">Links</h5>
-                    <ul>
-                        <li><a href="#!">Link 1</a></li>
-                        <li><a href="#!">Link 2</a></li>
-                        <li><a href="#!">Link 3</a></li>
-                        <li><a href="#!">Link 4</a></li>
-                    </ul>
-                </div>
-                <!--/.Second column-->
-            </div>
-        </div>
-        <!--/.Footer Links-->
-    
-        <!--Copyright-->
-        <div class="footer-copyright">
-            <div class="container-fluid">
-              
-            </div>
-        </div>
-        <!--/.Copyright-->
-    
-    </footer>
-    <!--/.Footer-->
-                    
-             
-    <!--FOOTER -->
+	</form>
 
 
 
+	
 
-
-
-
-
-    <!--MAIN PAGE-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Start your project here-->
-    <!-- /Start your project here-->
-
-    <!-- SCRIPTS -->
-    <!-- JQuery -->
-    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="js/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
 </body>
-
 </html>
